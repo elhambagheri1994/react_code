@@ -7,6 +7,7 @@ const otp = lazy(() => import("./accounting/otp/otp"));
 const forgotPassowrdOtp = lazy(() =>
   import("./accounting/forgotPassOtp/forgotPassOtp")
 );
+// eslint-disable-next-line import/no-cycle
 const dashboard = lazy(() => import("./dashboard/dashboard"));
 const cartable = lazy(() => import("./cartable/cartable"));
 const notfound = lazy(() => import("./notfound/notFound"));
